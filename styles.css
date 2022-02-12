@@ -20,10 +20,11 @@
 body {
   background-color: var(--color-principal);
   color: var(--color-letra);
-  background-image: url("/Vectores/Rectangle\ 34-1.svg");
+  background-image: url("/Vectores/Rectangle 33.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top right;
   font-family:'Montserrat', sans-serif;
+  background-size: 80%;
 }
 /*congiguracion de la nav*/
 nav {
@@ -38,6 +39,10 @@ nav > div a {
   text-decoration: none;
   color: white;
   margin: 10px;
+}
+
+nav > div img {
+  width: 50px;
 }
 
 input#menu-hamburguesa {
@@ -118,11 +123,13 @@ input#menu-hamburguesa:checked ~ ul {
 /*acarca de mi*/
 
 #acerca-de-mi {
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 0 20px;
+  background-image: url("/Vectores/Rectangle 34-1.svg");
 }
 
 #acerca-de-mi > h1 {
+  padding-top: 30px;
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
@@ -130,24 +137,61 @@ input#menu-hamburguesa:checked ~ ul {
 
 #acerca-de-mi > p {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.images img {
+   height: 120px;
+   width: 120px;
+}
+
+.images p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
 
 
 
 @media only screen and (min-width: 600px) {
   /*congiguracion de la nav*/
+  body {
+    background-size: 60%;
+  }
+
   label {
     display: none;
   }
+
   input#menu-hamburguesa ~ ul {
     position: static;
     display: flex;
-  }
-  /*configuracion article-1*/
-  input#menu-hamburguesa ~ ul {
     background-color:transparent;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
   }
+  
+  /*acerca de mi */
+
+  #acerca-de-mi {
+    font-size: 1.5rem ;
+  }
+
+  #acerca-de-mi > div img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #acerca-de-mi > div p {
+    font-size: 1rem;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -158,13 +202,15 @@ input#menu-hamburguesa:checked ~ ul {
   }
 }
 
+
 @media only screen and (min-width: 1100px) {
   #about-section > img{
     width: 500px;
     height: auto;
   }
   body {
-    margin: 0 100px;
+    background-size: 65%;
+    background-image: url("/Vectores/Rectangle\ 33-1.svg");
   }
   #about-section > div h1 {
     font-size: 60px;
@@ -174,5 +220,12 @@ input#menu-hamburguesa:checked ~ ul {
     left: 0;
     margin-left: 100px;
     margin-top: 100px;
-}
+  }
+  /*acerca de mi*/
+  #acerca-de-mi {
+    padding: 0 100px;
+    background-image: url("/Vectores/Rectangle 34-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
