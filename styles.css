@@ -23,6 +23,7 @@ body {
   background-image: url("/Vectores/Rectangle\ 34-1.svg");
   background-repeat: no-repeat;
   background-position: right;
+  font-family:'Montserrat', sans-serif;
 }
 /*congiguracion de la nav*/
 nav {
@@ -91,7 +92,6 @@ input#menu-hamburguesa:checked ~ ul {
 }
 
 #about-section > div > h1 + p {
-  font-family: 'Montserrat', sans-serif;
   font-weight:500;
   font-size: 22px;
   margin-left:20px;
@@ -106,6 +106,7 @@ input#menu-hamburguesa:checked ~ ul {
 #about-section > div > p {
   margin-left:20px;
   margin-top: 30px;
+  font-size: 1.2rem;
 }
 
 #redes-sociales img {
@@ -114,6 +115,23 @@ input#menu-hamburguesa:checked ~ ul {
   width: 6vw;
 }
 
+/*acarca de mi*/
+
+#acerca-de-mi {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+#acerca-de-mi > h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#acerca-de-mi > p {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 
 
@@ -138,4 +156,23 @@ input#menu-hamburguesa:checked ~ ul {
   nav > div a {
     padding: 0 30px;
   }
+}
+
+@media only screen and (min-width: 1100px) {
+  #about-section > img{
+    width: 500px;
+    height: auto;
+  }
+  body {
+    margin: 0 100px;
+  }
+  #about-section > div h1 {
+    font-size: 60px;
+  }
+  #about-section > div {
+    position:absolute;
+    left: 0;
+    margin-left: 100px;
+    margin-top: 100px;
+}
 }
