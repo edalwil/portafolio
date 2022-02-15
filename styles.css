@@ -173,7 +173,6 @@ input#menu-hamburguesa:checked ~ ul {
 #experencia > h1 {
   text-align: center;
   font-size: 2rem;
-  font-weight: 400;
 }
 
 #experencia > #amazon {
@@ -333,6 +332,16 @@ input#menu-hamburguesa:checked ~ ul {
   margin: 30px 20px;
 }
 
+/*Contacto*/
+
+#contacto {
+  margin-top:100px;
+}
+
+#contenedor-telefono 
+
+
+
 
 
 
@@ -384,10 +393,21 @@ input#menu-hamburguesa:checked ~ ul {
   #mis-habilidades h1 {
     text-align:left ;
     padding-left: 20%;
+    font-size: 2rem;
   }
 
   #mis-habilidades {
     background-position: -15%;
+  }
+
+  /*mi portafolio*/
+
+  #mi-portafolio h1 {
+    font-size: 2rem;
+  }
+  
+  #mi-portafolio {
+    padding: 0 50px;
   }
 
   
@@ -487,6 +507,72 @@ input#menu-hamburguesa:checked ~ ul {
     font-size: 2.5rem;
     width: 500px;
   }
+
+  /*mi portafolio*/
+
+  #mi-portafolio h1 {
+    font-size: 3rem;
+  }
+  
+  #mi-portafolio {
+    padding: 0 50px;
+  }
+
+  #mi-portafolio > #imagen-1 > img {
+    width: 400px;
+    height: 250px;
+    top: 25px;
+    left: 10px;
+  }
+
+  #imagen-1 {
+    width: 420px;
+    height: 250px;
+    background-color: var(--colot-iconos);
+  }
+
+  #mi-portafolio > #imagen-1 > img + p{
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+
+  .absolute {
+    padding-right: 50px;
+   }
+   
+   #imagen-2 p {
+     text-align:end;
+     padding-right: 50px;
+     margin-top: 30px;
+     font-size: 2rem;
+   }
+   
+   .absolute > img{
+     margin-top: 100px;
+     width: 420px;
+     height: 250px;
+   }
+
+   #mi-portafolio > #imagen-3 > img {
+    width: 400px;
+    height: 250px;
+    top: 25px;
+    left: 10px;
+  }
+
+  #imagen-3 {
+    width: 420px;
+    height: 250px;
+    background-color: var(--colot-iconos);
+  }
+
+  #mi-portafolio > #imagen-3 > img + p{
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+   
+
+  
 
   
   
