@@ -68,6 +68,10 @@ input#menu-hamburguesa:checked ~ ul {
   right: 0;
 }
 
+ul:checked > a {
+  right: 100px;
+}
+
 /*configuracion article-1*/
 
 #about-section {
@@ -161,7 +165,7 @@ input#menu-hamburguesa:checked ~ ul {
 
 #experencia {
   margin-top: 50px;
-  margin-right: 10px;
+  margin-right: 25px;
   padding-left: 10px;
   background-image: url("/Vectores/Group 35.svg");
   background-repeat: no-repeat;
@@ -333,9 +337,55 @@ input#menu-hamburguesa:checked ~ ul {
 }
 
 /*Contacto*/
-
 #contacto {
+  background-image: url("/Vectores/Rectangle 33-1.svg");
+}
+#contacto > h1 {
+  padding-top: 10px;
+  text-align: center;
   margin-top:100px;
+  margin-bottom: 50px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.telefono > img {
+  height: 80px;
+  width: 200px;
+}
+
+.telefono >img + p {
+  font-weight: 600;
+  margin-bottom: 10px
+}
+
+.telefono > p + p {
+  font-size: 0.9rem;
+}
+
+.correo > img {
+  margin-top: 80px;
+  height: 80px;
+  width: 200px;
+}
+
+.correo >img + p {
+  font-weight: 600;
+  margin-bottom: 10px
+}
+
+.correo > p + p {
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
 }
 
 
@@ -457,6 +507,7 @@ input#menu-hamburguesa:checked ~ ul {
   #experencia {
     padding-left: 15%;
     background-size: 20px;
+    padding-right: 20px;
   }
 
   #experencia h1 {
