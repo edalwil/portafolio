@@ -45,13 +45,16 @@ nav > div img {
   width: 50px;
 }
 
-input#menu-hamburguesa {
+input {
   visibility: hidden;
 }
 
 ul > li {
   margin: 20px;
 }
+
+
+
 
 input#menu-hamburguesa ~ ul {
   background-color: var(--color-principal);
@@ -68,9 +71,8 @@ input#menu-hamburguesa:checked ~ ul {
   right: 0;
 }
 
-ul:checked > a {
-  right: 100px;
-}
+
+
 
 /*configuracion article-1*/
 
